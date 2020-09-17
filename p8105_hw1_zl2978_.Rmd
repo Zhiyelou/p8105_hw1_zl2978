@@ -56,6 +56,10 @@ The dataset penguins has variables `r ls(penguins)`. The value of bill_depth_mm 
 Then I will draw a scatterplot of flipper_length_mm against bill_length_mm 
 ```{r}
 ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm,color = species)) + geom_point(na.rm = TRUE)
+```
+
+Finally, I will export and save the scatterplot on my computer
+```{r}
 ggsave("penguins_flipper_bill_plot.pdf",height = 6,width = 9)
 ```
 
